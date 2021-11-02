@@ -1,0 +1,26 @@
+----- Config/Route Caching
+php artisan config:cache
+php artisan config:clear
+php artisan route:cache
+php artisan route:clear
+------ Classmap Optimization
+php artisan optimize --force
+--------Composer Optimize Autoload
+composer dumpautoload -o
+-------- compiler 
+ best JIT compiler is HHVM
+---------Fast Cache and Session driver
+the fastest cache and session drivers for Laravel  performance is Memcached.
+---------Cache Queries Results
+use Cache::remember()
+---------Precompile Assets
+php artisan optimize
+---------Use CDN for Delivering Static Assets
+---------Assets Bundling
+->Laravel Mix 
+mix.styles([
+'public/css/vendor/normalize.css',
+'public/css/styles.css'
+], 'public/css/all.css');
+----------Assets minifying
+npm run production
